@@ -1,15 +1,15 @@
 language: node_js
 node_js:
-  - iojs-v1
-  - '0.12'
-  - '0.11'
-  - '0.10'
+- iojs-v1
+- '0.12'
+- '0.11'
+- '0.10'
 sudo: false
 cache:
   directories:
-    - node_modules
+  - node_modules
 before_deploy:
-  - npm config set spin false --global
+- npm config set spin false --global
 deploy:
   provider: npm
   email: quildreen@gmai.com
@@ -18,7 +18,8 @@ deploy:
     branch: master
     repo: robotlolita/xps
   api_key:
-    secure: R4ShiIAtA74E1UMW+/KvngB7Z2wziM/NuYygRJptmALn8lm6qqH9yIKp3Js6qAE0lGBxcWKkHp9Gw6eDUq58g6L1UnKb2smDQMKuyG20pL+x8f9Brvjme1PUo7YvDsWUJ2D7PnIQzWQnqggDZ+nhshZ58JSemgQ1QFKbVSRaXek=
+    secure: GbetotUmue5gdyH+NI5YgdpvYiLcCQm/KF9IvZRGrHPlADSS6PcAdmUa05jnwJUcprMEuAcIxxiAbB9eUL2N9Ls+fcF6z2X4wv3IBmEho5I2i1scx6jERSSoRBumRkBpSnANM3ve+3Ev/oTKE77tsPwHEunANzvjX/O6nHCmosMMBWaNr+10k6UejCW2gI4owaWKRX4x8Gnd9+1/BUiGbnwPpkPNnvdbJwoy/ERT6Q4/JcuGJiDEtkrt3OFyZm8UPz/k2gy49sQapstj2nTOeuWSJZ2ET0oKe5XZJU5QmSAYFBGnTac+hKqs8DMgvD1vS6L+VIYaDGJQqV1f+LTnwIC4OclWUaWPZTg2jd7IOpyXd3uXzZzX7bHo3POJdH9dVfA8X6J+q64mppQuNQ0y4BCXCSebGxppFCVimJQ7mRuehTdX31+p9RA+fPp58FgbYzF+lHgLjB4nrhaK2Qu/B605apCwAuIQbyVBe6WLOBmppKwKhIlr4ksR4dCxGm+VNmsLzNtYJIkxQ+q/rBOJGnioorGSc2iG7k/lxKd1B+wzDO874SWuqHMG3aw8Vrn/oUdBPaiU70rimrppvShORM4bLkiuKetk4TmBmp7Rbx2s7aCwsjWC1w+GVHLO45WCAVIx0DMHMcnvSujY7jGUJ9voveAH1CF3O1Ivtkjy4xg=
 env:
   global:
-    secure: br1+wlPEnDu4PULO99D+5pIlWxt7gfRdEBoBd7C2yYcGtYxMkaUEWap2msDxuaws7dn9mpKrIl1eObIxTn+HgWYoGiY6ma+Gt9r/M6U28TB7xZuuWe9BmMkV+KNCbSYizBBwYX/alQxu8wEm6n3XPxGDMEKlhPjqhr0V0dTam+8=
+  - secure: br1+wlPEnDu4PULO99D+5pIlWxt7gfRdEBoBd7C2yYcGtYxMkaUEWap2msDxuaws7dn9mpKrIl1eObIxTn+HgWYoGiY6ma+Gt9r/M6U28TB7xZuuWe9BmMkV+KNCbSYizBBwYX/alQxu8wEm6n3XPxGDMEKlhPjqhr0V0dTam+8=
+  - secure: nhLZF59pqfPt34uikI0xeK4tkZah4dsNK+qMI/pRjGJ3PJBKoI1ODKohPffs7orqEfnwg4V3abqA+Jsa6L+N4kS+qHoKzCADSOlCmSPxfWRDiPYwbmQ8PLDi/MkFrJ7aYdJIKL8KVT5ehtuEPxi11tcS1Tz06L9Umf/eUyXFnLZY33c4D+HnyBEQzEStEVodLjSaxG0UQWrQ0dzPDvQ9FCkhzSlt2vNPoct6tzY80BVq+zYcIEJBXpp7hyxshQao1B4NIGkVkVgZjdrWwlJrw6nPa4jnBKOwrVt7nGEyqWglWPs8xzGeMNVXtU+6OFSliwzllTE8BC++5Gb44T7TZsCag13Oh6i+Z6lzca1loj24O+7CXKV5bLdsz43QLVvaIduupZ77C2P3bAe9Iin+9gqcTrNR9oMNzXcK90YtUa5s5qsr7hwzxlHsvNlinw2EnfGKGDZcSe8ZcbKGKtRyFJiP8PwG7EcYoBihmr8xjDK1wDNAE02mEUokHXXRpOKn3kTqHx1nH1/xP3FxiX4j1H2txRqttK3zv2QFv3b8KhOMZYOsDYvbDyD7u5efPVsAvAhoxCdQM1ZM9suxB8SAt7CLjVrpD3aDLBzphGp+R0TrhMVDG/lYf1DH3LFNhNwgPrKwicBKblyaOXFxrkCCoUMOt+7wSbUwJdXr+m/YeDs=
