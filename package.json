@@ -1,0 +1,44 @@
+{
+  "name": "xps",
+  "version": "0.0.0-semantically-released",
+  "description": "Cross-platform library for listing and killing processes.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "make test",
+    "prepublish": "semantic-release pre",
+    "postpublish": "semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robotlolita/xps"
+  },
+  "keywords": [
+    "windows",
+    "linux",
+    "ps",
+    "taskkill",
+    "tasklist",
+    "processes",
+    "listing"
+  ],
+  "author": "Quildreen Motta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robotlolita/xps/issues"
+  },
+  "dependencies": {
+    "core.arity": "^1.0.0",
+    "core.lambda": "^1.0.0",
+    "csv": "^0.4.2",
+    "data.task": "^3.0.0",
+    "ms-task": "^1.1.0"
+  },
+  "devDependencies": {
+    "semantic-release": "^3.3.1",
+    "specify-assertions": "^1.0.0",
+    "specify-core": "^1.0.1",
+    "specify-reporter-spec": "^1.0.0",
+    "sweet-fantasies": "robotlolita/sweet-fantasies#patch-compatibility",
+    "sweet.js": "^0.7.4"
+  }
+}

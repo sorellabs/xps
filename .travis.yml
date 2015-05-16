@@ -1,0 +1,24 @@
+language: node_js
+node_js:
+  - iojs-v1
+  - '0.12'
+  - '0.11'
+  - '0.10'
+sudo: false
+cache:
+  directories:
+    - node_modules
+before_deploy:
+  - npm config set spin false --global
+deploy:
+  provider: npm
+  email: quildreen@gmai.com
+  skip_cleanup: true
+  on:
+    branch: master
+    repo: robotlolita/xps
+  api_key:
+    secure: R4ShiIAtA74E1UMW+/KvngB7Z2wziM/NuYygRJptmALn8lm6qqH9yIKp3Js6qAE0lGBxcWKkHp9Gw6eDUq58g6L1UnKb2smDQMKuyG20pL+x8f9Brvjme1PUo7YvDsWUJ2D7PnIQzWQnqggDZ+nhshZ58JSemgQ1QFKbVSRaXek=
+env:
+  global:
+    secure: br1+wlPEnDu4PULO99D+5pIlWxt7gfRdEBoBd7C2yYcGtYxMkaUEWap2msDxuaws7dn9mpKrIl1eObIxTn+HgWYoGiY6ma+Gt9r/M6U28TB7xZuuWe9BmMkV+KNCbSYizBBwYX/alQxu8wEm6n3XPxGDMEKlhPjqhr0V0dTam+8=
