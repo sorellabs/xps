@@ -1,12 +1,10 @@
 {
   "name": "xps",
-  "version": "0.0.0-semantically-released",
+  "version": "1.0.3",
   "description": "Cross-platform library for listing and killing processes.",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "make test",
-    "prepublish": "semantic-release pre",
-    "postpublish": "semantic-release post"
+    "test": "make test"
   },
   "repository": {
     "type": "git",
@@ -34,7 +32,6 @@
     "ms-task": "^1.1.0"
   },
   "devDependencies": {
-    "semantic-release": "^3.3.1",
     "specify-assertions": "^1.0.0",
     "specify-core": "^1.0.1",
     "specify-reporter-spec": "^1.0.0",
